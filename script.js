@@ -5,7 +5,7 @@ const menulinks = [
   { text: 'orders', href: '/orders' },
   { text: 'account', href: '/account' },
 ];
-
+const subMenuEl = document.getElementById('sub-menu');
 
 /*const mainEl = typeof document !== 'undefined' 
   ? document.querySelector('main') 
@@ -44,3 +44,4 @@ menulinks.forEach(link => {
   topMenuEl.appendChild(aElement);
 
 });
+
