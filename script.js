@@ -5,7 +5,7 @@ const menulinks = [
   { text: 'orders', href: '/orders' },
   { text: 'account', href: '/account' },
 ];
-const subMenuEl = document.getElementById('sub-menu');
+
 
 /*const mainEl = typeof document !== 'undefined' 
   ? document.querySelector('main') 
@@ -13,25 +13,25 @@ const subMenuEl = document.getElementById('sub-menu');
 
 
 //DOM elements
-
 const mainEl = document.querySelector('main');
-
 const topMenuEl = document.getElementById('top-menu');
-
+const subMenuEl = document.getElementById('sub-menu');
 //style main element
 mainEl.style.backgroundColor = 'var(--main-bg)';
-
 mainEl.innerHTML = '<h1>DOM Manipulation</h1>';
-
 mainEl.classList.add('flex-ctr');
 
 /*console.log(topMenuEl);*/ //style top menu
-
 topMenuEl.style.height = '100%'
-
 topMenuEl.style.backgroundColor = 'var(--top-menu-bg)'
-
 topMenuEl.classList.add('flex-around');
+
+//submenu 
+subMenuEl.style.height = '100%'
+subMenuEl.style.backgroundColor = 'var(--sub-menu-bg)'
+subMenuEl.classlist.add('flex-around');
+subMenuEl.style.position = "absolute";
+subMenuEl.style.top = "0";
 
 
 //create menu links
